@@ -38,7 +38,9 @@
         background-color: rgba(57,177, 164, 0.7);
         padding: 1em;
       }
-
+#headline #register img{
+	width: 200px;
+}
       #headline #register h2 {
         font-weight: 100;
         padding: 0;
@@ -126,7 +128,7 @@
       }
 
       #section2 div img {
-        width: 100%
+        width: 50%
       }
 
       #section3 {
@@ -167,22 +169,7 @@
         padding-bottom: 20px;
         padding-top: 20px;
       }
-
-      table {
-        margin-top: 26px;
-        width: 100%;
-      }
-      thead {
-        font-weight: bold;
-      }
-
-      tbody {
-        text-align: center;
-      }
-
-      
-
-      
+   
 @media screen and (min-width: 600px) {
           #headline {
             padding: 20px 5%;
@@ -209,7 +196,7 @@
           #headline #register {
             float:right;
             padding: 20px;
-            width: 50%;
+            width: 30%;
             box-sizing: border-box;
             font-weight: 300;
           }
@@ -242,7 +229,7 @@
           }
           
           #section2 div img {
-            width: 30%;
+            width: 15%;
             margin: 1%;
             box-sizing: border-box;
           }
