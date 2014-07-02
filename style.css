@@ -38,7 +38,9 @@
         background-color: rgba(57,177, 164, 0.7);
         padding: 1em;
       }
-
+#headline #register img{
+	width: 200px;
+}
       #headline #register h2 {
         font-weight: 100;
         padding: 0;
@@ -126,7 +128,7 @@
       }
 
       #section2 div img {
-        width: 100%
+        width: 50%
       }
 
       #section3 {
@@ -167,22 +169,21 @@
         padding-bottom: 20px;
         padding-top: 20px;
       }
-
-      table {
-        margin-top: 26px;
-        width: 100%;
-      }
-      thead {
-        font-weight: bold;
-      }
-
-      tbody {
-        text-align: center;
-      }
-
+     /** nav*/
       
-
+      	.nav { width:100%;
+      	/* background-color: #fff; */
+      	 background-color: rgb(220,77,55);
+      	 border-bottom: 1px solid #ccc;  }
+		ul.simple-toggle { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+		ul.simple-toggle li { display: inline-block; text-align: left; }
+		ul.simple-toggle li a { display: block; padding: 15px 10px; text-decoration: none; color: white; }
+		ul.simple-toggle li a:hover { background-color: #ccc; }
+		
+		.anchor-link { display: none; text-align: right; padding: 0 1em 0; text-align: center; padding: 10px 15px; color: #fff; background-color: #0084B4; text-decoration: none; margin: 3px; float: right; }
+		#mobile-nav { display:none; }
       
+   
 @media screen and (min-width: 600px) {
           #headline {
             padding: 20px 5%;
@@ -209,7 +210,7 @@
           #headline #register {
             float:right;
             padding: 20px;
-            width: 50%;
+            width: 30%;
             box-sizing: border-box;
             font-weight: 300;
           }
@@ -242,8 +243,37 @@
           }
           
           #section2 div img {
-            width: 30%;
+            width: 15%;
             margin: 1%;
             box-sizing: border-box;
           }
+        	
         }
+       
+       @media (max-width:48.000em){
+       	
+       	 /**--navigation--**/
+        ul.simple-toggle { display: none; }
+		.anchor-link, #mobile-nav { display: block; }
+
+	  ul.open { 
+	    background-color: #F4F4F4;
+	    box-shadow: 2px 2px 3px #444444;
+	    display: block;
+	    list-style: none outside none;
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    right: 5px;
+	    top: 100%;
+	    width: 50%;
+	    z-index: 500; 
+		}
+		ul.open li { display: block; list-style: none; text-align: center; }
+		ul.open li a { display: block; padding: 20px 10px; border-bottom: 1px solid #ccc; text-decoration: none; }
+		ul.open li a:hover { background-color: #ccc; color: #fff; }	
+       }
+       	
+       	
+       	
+       	
