@@ -154,14 +154,17 @@
       #section3 h2 + p {
         text-align: center;
       }
-
-      #section3 figure {
-        text-align: center;
-      }
-
-      #section3 figure figcaption {
-        text-align: center;
-        font-weight: 400;
+	  #section3 ul li{
+	  	display: inline;
+	  	padding: 1%;
+	  	
+      	font-weight: bold;
+	  }
+      #section3 ul li a{
+      	text-decoration: none;
+      	color: hsl(8, 70%, 54%);
+      	font-weight: bold;
+      	color: hsl(8, 70%, 54%);
       }
 
       #footer {
