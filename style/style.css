@@ -108,9 +108,7 @@
       }
 
       #section2 {
-        background-image: url("Images/bg_code.png");
-       	background-repeat: none;
-       	background-size: cover;
+        background-color: #ccc;
         font-family: Roboto, sans-serif;
         font-weight: 100;
         font-size: 18px;
