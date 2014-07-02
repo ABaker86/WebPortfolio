@@ -39,7 +39,8 @@
 	  }
       #headline #register {
         background-color: #39b1a4;
-        background-color: rgba(57,177, 164, 0.7);
+        background-color: rgba(220,77,55, 0.7);
+        border-radius: 10px;
         padding: 1em;
       }
 	  #headline #register img{
@@ -100,11 +101,8 @@
         margin-top: 20px;
       }
 
-      #section1 h2 + p {
-      }
-
-      #section1 video {
-        width: 100%;
+      #section1 p {
+      	
       }
 
       #section2 {
