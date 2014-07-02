@@ -32,15 +32,19 @@
         font-weight: 300;
         font-size: 18px;
       }
-
+	  .gLink{
+	  	text-decoration: none !important;
+	  	color: hsl(8, 70%, 54%);
+	  	font-weight: bold;
+	  }
       #headline #register {
         background-color: #39b1a4;
         background-color: rgba(57,177, 164, 0.7);
         padding: 1em;
       }
-#headline #register img{
-	width: 200px;
-}
+	  #headline #register img{
+		width: 200px;
+	  }
       #headline #register h2 {
         font-weight: 100;
         padding: 0;
@@ -184,7 +188,7 @@
 		#mobile-nav { display:none; }
       
    
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
           #headline {
             padding: 20px 5%;
           }
@@ -242,7 +246,7 @@
             clear: both;
           }
           
-          #section2 div img {
+         #section1 img, #section2 div img {
             width: 15%;
             margin: 1%;
             box-sizing: border-box;
@@ -274,6 +278,6 @@
 		ul.open li a:hover { background-color: #ccc; color: #fff; }	
        }
        	
-       	
+
        	
        	
