@@ -1,5 +1,5 @@
 /**
- * Building a Responseiv layout based on Google Web Fundamentals	
+ * Building a Responsive layout based on Google Web Fundamentals	
  * */ 
  body {
         margin: 0;
@@ -99,6 +99,9 @@
         text-align: center;
         margin-bottom: 0px;
         margin-top: 20px;
+      }
+      #section1 img{
+      	width: 30%;
       }
 
       #section1 p {
@@ -216,7 +219,7 @@
             width: 30%;
             box-sizing: border-box;
             font-weight: 300;
-          }
+          } 
           
           #section1 #section2, #section3 {
             box-sizing: border-box;
