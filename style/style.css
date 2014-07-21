@@ -179,13 +179,13 @@
       
       	.nav { width:100%;
       	/* background-color: #fff; */
-      	 background-color: rgb(220,77,55);
-      	 border-bottom: 1px solid #ccc;  
-      	 }
-		ul.simple-toggle { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
-		ul.simple-toggle li { display: inline-block; text-align: left; }
-		ul.simple-toggle li a { display: block; padding: 15px 10px; text-decoration: none; color: white; }
-		ul.simple-toggle li a:hover { background-color: #ccc; }
+	      	 background-color: rgb(220,77,55);
+	      	 border-bottom: 1px solid #ccc;  
+	      	 }
+			ul.simple-toggle { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+			ul.simple-toggle li { display: inline-block; text-align: left; }
+			ul.simple-toggle li a { display: block; padding: 15px 10px; text-decoration: none; color: white; }
+			ul.simple-toggle li a:hover { background-color: #ccc; }
 		
 		.anchor-link { 
 			display: none; 
@@ -266,7 +266,7 @@
             box-sizing: border-box;
           }
         	
-        }
+      }
        
        @media (max-width:48.000em){
        	
@@ -276,7 +276,7 @@
 		
 	  ul.open { 
 	    /*background-color: #F4F4F4;*/
-	   background-color: red;
+	   background-color: rgb(220,77,55);
 	    box-shadow: 2px 2px 3px #444444;
 	    display: block;
 	    list-style: none outside none;
@@ -291,6 +291,13 @@
 		ul.open li { display: block; list-style: none; text-align: center; }
 		ul.open li a { display: block; padding: 20px 10px; border-bottom: 1px solid #ccc; text-decoration: none; }
 		ul.open li a:hover { background-color: #ccc; color: #fff; }	
+		#section1 img, #section2 div img {
+           width: 15%;
+           margin: 1%;
+           box-sizing: border-box;
+         }
+		#schoolLogo{display: none;}
+		#register{ width: 75%;}
        }
        	
 
