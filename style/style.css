@@ -175,18 +175,30 @@
         padding-bottom: 20px;
         padding-top: 20px;
       }
-     /** nav*/
+/** nav*/
       
       	.nav { width:100%;
       	/* background-color: #fff; */
       	 background-color: rgb(220,77,55);
-      	 border-bottom: 1px solid #ccc;  }
+      	 border-bottom: 1px solid #ccc;  
+      	 }
 		ul.simple-toggle { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
 		ul.simple-toggle li { display: inline-block; text-align: left; }
 		ul.simple-toggle li a { display: block; padding: 15px 10px; text-decoration: none; color: white; }
 		ul.simple-toggle li a:hover { background-color: #ccc; }
 		
-		.anchor-link { display: none; text-align: right; padding: 0 1em 0; text-align: center; padding: 10px 15px; color: #fff; background-color: #0084B4; text-decoration: none; margin: 3px; float: right; }
+		.anchor-link { 
+			display: none; 
+			text-align: right; 
+			padding: 0 1em 0; 
+			text-align: center; 
+			padding: 10px 15px; 
+			color: #fff; 
+			background-color: 
+			rgb(220,77,55); 
+			text-decoration: none; 
+			margin: 3px; 
+			float: right; }
 		#mobile-nav { display:none; }
       
    
@@ -261,17 +273,18 @@
        	 /**--navigation--**/
         ul.simple-toggle { display: none; }
 		.anchor-link, #mobile-nav { display: block; }
-
+		
 	  ul.open { 
-	    background-color: #F4F4F4;
+	    /*background-color: #F4F4F4;*/
+	   background-color: red;
 	    box-shadow: 2px 2px 3px #444444;
 	    display: block;
 	    list-style: none outside none;
 	    margin: 0;
 	    padding: 0;
 	    position: absolute;
-	    right: 5px;
-	    top: 100%;
+	    right: 2px;
+	    top: 45px;
 	    width: 50%;
 	    z-index: 500; 
 		}
