@@ -1,86 +1,20 @@
- <!doctype html>
-    <html>
-      <head>
-		<link href="//fonts.googleapis.com/css?family=Roboto:400,300,200,100&subset=latin,cyrillic" rel="stylesheet">
-		<link href="style/style.css" rel="stylesheet" />
-		<link href="style/fontello/css/fontello.css" rel="stylesheet"/>
-		<link rel="shortcut icon" href="favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="I am a front-end web  and application developer" />
-		<script type="text/javascript" src="scripts/script.js" defer></script>
-		<title>Adam Baker: Software Develper Portfolio</title>
-      </head>
-      <body>
-        <nav class="nav clearfix">
-			<a id="menu-toggle" class="anchor-link" href="#">Menu</a>
-			<ul class="simple-toggle" id="menu">
-	        	<li><a  href="#">Home</a></li>
-	        	<li><a  href="Works.html">Works</a></li>
-	        	<li><a  href="#">Resume</a></li>
-	        	<li><a  href="mailto:adambaker@live.com?subject=Saw Your Portfolio on GitHub">Contact</a></li>
-	        </ul>
-		</nav>
-        <div id="headline">
-      <div class="container">
-        <header>	
-          <h1>Adam Baker</h1>
-          <p>GitHub Projects</p>
-        </header>
-        <div id="blurb">
-          <p><a class="gLink" href="https://github.com/ABaker86/SPWCsharp" target="_blank">SPWCsharp</a>: a program designed to help non-coders create simple HTML Squeeze Pages. -written in C# </p>
-          <p><a class="gLink" href="https://github.com/ABaker86/Genfor" target="_blank">Genfor</a>: a program designed to help table-game players come up with names and images for their game characters. -written in PHP</p>
-        </div>
-        <img id="register" src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/1/005/00f/273/25abd94.jpg"/>
-        <br>
-      </div>
-    </div>
-    
-<div id="section1">
-      <div class="container">
-        <h2>Continuous Learning</h2>
-        <p>Over the past few years I have dedicated myself to academia developing applications large and small.</p>
-        <ul>
-          <li>Windows 7 Phone Recipe App written with C# and Silverlight</li>
-          <li>Web Services Sandbox with ASP.NET & C#</li>
-          <li>File Splitter with Java and Swing</li>
-          <li>File Search & Deploy Compare Registry Search scripts with PowerShellv3</li>
-        </ul>
-        <img src="./Images/logo.png" style="float: right; width: 300px">
-        <br>
-      </div>
-    </div>
-    
-<div id="section2">
-      <div class="container">
-        <h2>Software Development & Analysis</h2>
-        <p>Most of my projects involved creating something with software</p>
-        <!--Add image Caresoul-->
-        <div id="images">
-          <img src="./Images/html5.png" alt="HTML5: Web Technology">
-          <img src="./Images/WindowsPhone8.png" alt="Mobile Logo: Mobile Technologies">
-          <img src="./Images/IDEs.png" alt="IDE: Desktop Technology">
-        </div>
-        <br>
-      </div>
-    </div>
-    
-<div id="section3">
-      <div class="container">
-        	<ul>
-                <li><span class="icon-mail-1"></span> <a href="mailto:adambaker@live.com?subject=Saw Your Portfolio on GitHub">adambaker@live.com</a></li>
-                <li><span class="icon-phone-1"></span> <a href="tel: 12604097729"> +1 (260) 409-7729</a></li>
-                <li><span class="icon-location"></span> Fort Wayne, IN USA</li>
-                <li><a class="icon-linkedin" href="https://www.linkedin.com/in/adambaker2/" target="_blank"></a>
-                	<a class="icon-github" href="https://github.com/ABaker86" target="_blank"></a>
-                	<a class="icon-googleplus" href="https://plus.google.com/100100638984489720053/about" target="_blank"></a></li>
-            </ul>
-      </div>
-    </div>
-<div id="footer">
-      <div class="container">
-        <p>&copy 2012-<span id="date"></span>  - Adam Baker.</p>
-      </div>
-    </div>
-          
-          
-    </html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
