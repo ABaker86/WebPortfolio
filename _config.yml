@@ -1,7 +1,7 @@
 # Site settings
 title: Adam Baker | Software Developer
 email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Adam is a software developer living in Fort Wayne, IN in the US. He is the author of the Google Chrome App 'IT Signature Generator', and when he is not working on code, he is working on classic cars and trucks."
 baseurl: "/WebPortfolio"
 url: "http://abaker86.github.io"
 twitter_username: jekyllrb
