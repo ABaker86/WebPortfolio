@@ -9,3 +9,8 @@ As of June 2014, Adam has graduated Suma Cum Laude with a degree in Information 
 After several years working his way up management positions in the food and beverage industry, Adam made a conscious decision to alter my future with the decision to pursue his passion of becoming a software developer. Although he achieved success in the food and beverage industry, his real passion has always resided in the field of technology. 
 
 Adam's current objective is to work in a software development position for a company that is not only a great place to work, but one that is interested in fostering the development of their employees.
+
+##Current interests
+- Angularjs (MVC)
+- Jekyll
+- HTML5 App Development
