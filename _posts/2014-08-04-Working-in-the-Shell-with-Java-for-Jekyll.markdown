@@ -1,0 +1,12 @@
+---
+layout : post
+title : Working in the Shell with Java for Jekyll
+date : 2014-08-04 09:03:15
+category : Jekyll UI
+---
+
+Over the past week I have spent a little time tinkering around with a slimmed down Jekyll UI. I have come up with what I belive is a really good first draft. 
+
+The UI allows the user to write a Jekyll post, title, and category, and allow the user to save the post withint the local Jekyll post directory. Although I would like to pour energy into this little project, I don't think that it is something that will really help me pay my shcool bills. So, I will have to throw this project onto the pile of "Spare time projects". 
+
+
