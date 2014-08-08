@@ -10,7 +10,10 @@ permalink: /projects/
 
 The application is a simple graphical forum signature generator targeted toward the IT field and is available for free in the Google app store.
 
+
 [SPWCsharp](https://github.com/ABaker86/SPWCsharp): a program designed to help non-coders create simple HTML Squeeze Pages. -written in C#
+![squeezepage generator image]({{ site.url}}/WebPortfolio/postAssets/squeezePage_sc.png)
 
 [Genfor](https://github.com/ABaker86/Genfor): a program designed to help table-game players come up with names and images for their game characters. -written in PHP
 
+![genfor image]({{ site.url}}/WebPortfolio/postAssets/char_generatorGenfor_sc.png)

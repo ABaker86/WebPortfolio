@@ -356,6 +356,9 @@ body, .site-header{
   .post-content img{
     width: 75%;
   }
+  img[alt="genfor image"]{
+  width: 20%;
+} 
 
 }
 
@@ -420,9 +423,16 @@ body, .site-header{
     width: auto;
     margin: 0 0 15px; }
 
+  img[alt="genfor image"]{
+  width: 20%;
+  } 
+
 }
 /*---page images-*/
 img[alt="Photo of Adam Baker"]{
   float: left;
   padding-right: 10px;
 }
+img[alt="squeezepage generator image"]{
+  width: 50%;
+} 
