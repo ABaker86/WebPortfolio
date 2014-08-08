@@ -5,6 +5,7 @@ phone: 260-409-7729
 description: "Adam is a software developer living in Fort Wayne, IN in the US. He is the author of the Google Chrome App 'IT Signature Generator', and when he is not working on code, he is working on classic cars and trucks."
 baseurl: "/WebPortfolio"
 url: "http://abaker86.github.io"
+paginate: 5
 
 #social links
 twitter_username: abakerit
