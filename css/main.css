@@ -141,7 +141,6 @@ body, .site-header{
 
 }
 
-
 /* Home styles */
 /* ----------------------------------------------------------*/
 
@@ -421,4 +420,9 @@ body, .site-header{
     width: auto;
     margin: 0 0 15px; }
 
+}
+/*---page images-*/
+img[alt="Photo of Adam Baker"]{
+  float: left;
+  padding-right: 10px;
 }
