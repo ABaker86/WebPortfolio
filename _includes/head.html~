@@ -1,16 +1,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+    <!--twitter Card and OpenGraph -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="@abakerit" />
+	<meta property="twitter:creator:id" content="165160092" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else%}{{ site.description }}{% endif %}" />
+	<meta property="og:url" content="{% if page.url %}{{ site.url}}{{ page.url}}{% else %}{{ site.url }}{% endif %}" />
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
     <!--twitter card-->
-    
-    <!--Scripts-->
-    <script type="script/javascript" src="/scripts/tcard.js"></script>
+    <script type="text/javascript" src=" {{ "/scripts/jquery-1.11.1.min.js" | prepend: site.baseurl }}" defer></script>
+
+    <script type="text/javascript" src=" {{ "/scripts/tcard.js" | prepend: site.baseurl }}" defer></script>
 </head>

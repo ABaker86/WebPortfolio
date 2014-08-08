@@ -6,6 +6,7 @@ description: "Adam is a software developer living in Fort Wayne, IN in the US. H
 baseurl: "/WebPortfolio"
 url: "http://abaker86.github.io"
 paginate: 5
+
 #social links
 twitter_username: abakerit
 github_username:  ABaker86
@@ -15,4 +16,3 @@ linkedIn: "Adam Baker"
 # Build settings
 markdown: kramdown
 permalink: pretty
-
