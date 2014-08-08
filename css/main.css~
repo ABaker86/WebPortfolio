@@ -13,6 +13,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
+  /*background-color: #fdfdfd;*/
+  background-image: url('../img/blueBg.jpg');
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -33,10 +35,7 @@ a:visited { color: #205caa; }
   zoom: 1;
 }
 
-body, .site-header{
- background: #f5f6f6; /* Old browsers */
 
-}
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
@@ -46,6 +45,7 @@ body, .site-header{
   border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
+  background-color: white;
 }
 
 .site-title,
@@ -138,7 +138,7 @@ body, .site-header{
 
 .page-content {
   padding: 30px 0;
-
+  background-color: #fff;
 }
 
 
@@ -147,7 +147,7 @@ body, .site-header{
 
 .home h1 { margin-bottom: 25px; }
 
-.posts { list-style-type: none;}
+.posts { list-style-type: none; }
 
 .posts li { margin-bottom: 30px; }
 
@@ -261,11 +261,6 @@ body, .site-header{
 
 .post pre.terminal code { background-color: #333; }
 
-.post-content img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
@@ -354,17 +349,9 @@ body, .site-header{
     clear: both;
   }
 
-  .post-content img{
-    width: 75%;
-  }
-
 }
 
 @media screen and (max-width: 600px) {
-
-  .post-content img{
-    width: 50%;
-  }
 
   .wrap { padding: 0 12px; }
 
