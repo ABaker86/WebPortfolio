@@ -9,7 +9,7 @@
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else%}{{ site.description }}{% endif %}" />
 	<meta property="og:url" content="{% if page.url %}{{ site.url}}{{ page.url}}{% else %}{{ site.url }}{% endif %}" />
-
+    <meta property="twitter:site" content="@abakerit" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
