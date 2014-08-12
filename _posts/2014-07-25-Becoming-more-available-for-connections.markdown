@@ -2,7 +2,8 @@
 layout: post
 title:  "Becoming more available for connections"
 date:   2014-07-25 9:31:56
-categories: learning
+categories: Personal
+keywords: "IT community, social, connections"
 ---
 
 Although I have never had a hard time getting along with others, I have never really been one to seek out new connections. 

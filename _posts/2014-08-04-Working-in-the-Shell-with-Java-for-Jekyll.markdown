@@ -2,7 +2,8 @@
 layout : post
 title : Working in the Shell with Java for Jekyll
 date : 2014-08-04 09:03:15
-category : Jekyll UI
+category : Design
+keywords: "Jekyll, Jekyll UI, Java"
 ---
 
 Over the past week I have spent a little time tinkering around with a slimmed down Jekyll UI. I have come up with what I believe is a really good first draft. 

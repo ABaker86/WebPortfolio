@@ -2,7 +2,8 @@
 layout : post
 title : A change of Scenery can be a good thing.
 date : 2014-08-08 10:02:16
-category : Lifestyle
+category : Personal
+keywords: "Graduation, Chicago, American INterContinental University"
 ---
 
 Over the past weekend I took off and headed up to Chicago, IL and it was not for the ever popular Lollapalooza in the parks. 

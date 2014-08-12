@@ -2,7 +2,8 @@
 layout: post
 title:  "Deciding to make a Jekyll post UI"
 date:   2014-07-30 11:20:00
-categories: Jekyll
+categories: Analysis
+keywords: "Jekyll, Jekyll UI, Java"
 ---
 
 Although Jekyll is a blogging platform "designed for developers" there are some things that I find to be very repetitive. 

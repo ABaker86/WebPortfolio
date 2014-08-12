@@ -16,3 +16,7 @@ linkedIn: "Adam Baker"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Meta Settings
+keywords: "web developer, web app development, software application development, front-end dev, back-end dev"
+author: "Adam Baker"

@@ -2,7 +2,8 @@
 layout: post
 title:  "A developer portfolio with Jekyll"
 date:   2014-07-24 16:10:56
-categories: jekyll
+categories: Personal
+keywords: "Jekyll, GitHub, blogging"
 ---
 
 I finally got around to creating my first static blog. Using Jekyll and Github, I believe that I now have a comfortable place on the web to post what I am working on and express my thoughts. 

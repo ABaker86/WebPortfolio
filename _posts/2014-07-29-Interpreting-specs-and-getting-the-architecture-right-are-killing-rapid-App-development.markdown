@@ -2,7 +2,8 @@
 layout: post
 title:  "Interpreting specs & architecture are killing rapid App development"
 date:   2014-07-29 8:38:00
-categories: learning
+categories: Analysis
+keywords: "freelance issues, difficulty, app development "
 ---
 
 There are a few issues that seem to commonly spring up for your average freelance, cowboy coders, and all around green developers. 
