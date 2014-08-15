@@ -45,14 +45,15 @@ body, .site-header{
 .site-header {
   border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
+  min-height: 80px;
+  background-color: black;
 }
 
 .site-title,
 .site-title:hover,
 .site-title:visited {
   display: block;
-  color: #333;
+  color: white;
   font-size: 26px;
   letter-spacing: -1px;
   float: left;
@@ -70,7 +71,7 @@ body, .site-header{
 
 .site-nav .page-link {
   margin-left: 20px;
-  color: #727272;
+  color: white;
   letter-spacing: -.5px;
 }
 
@@ -79,6 +80,8 @@ body, .site-header{
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
+  color: white;
+  background-color: black;
 }
 
 .footer-heading {
@@ -104,7 +107,7 @@ body, .site-header{
   width: -moz-calc(23.125% - 10px);
   width: -o-calc(23.125% - 10px);
   width: calc(23.125% - 10px);
-  margin-right: 10px
+  margin-right: 10px;
 }
 .footer-col-3 {
   width: 335px; /*fallback*/
@@ -120,7 +123,8 @@ body, .site-header{
 .site-footer p {
   font-size: 15px;
   letter-spacing: -.3px;
-  color: #828282;
+  /*color: #828282;*/
+  color: white;
 }
 
 .github-icon-svg,
@@ -339,6 +343,9 @@ body, .site-header{
 
 @media screen and (max-width: 750px) {
 
+  .site-nav .page-link {
+    color: black;
+  }
   .footer-col-1 { width: 50%; }
 
   .footer-col-2 {
@@ -374,6 +381,7 @@ body, .site-header{
   .wrap { padding: 0 12px; }
 
   .site-nav {
+    color: white;
     position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
@@ -387,7 +395,8 @@ body, .site-header{
   .site-nav .menu-icon {
     display: block;
     font-size: 24px;
-    color: #505050;
+    /*color: #505050;*/
+    color: white;
     float: right;
     width: 36px;
     text-align: center;
@@ -429,7 +438,6 @@ body, .site-header{
   img[alt="genfor image"]{
   width: 20%;
   } 
-
 }
 /*---page images-*/
 img[alt="Photo of Adam Baker"]{
