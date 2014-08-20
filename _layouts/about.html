@@ -13,7 +13,7 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img src="{{"/assets/img/user.png"}}" alt="Stanley">
+					<img src="{{"/assets/img/user.png" | prepend: site.baseurl }}" alt="Stanley">
 					<h1>About Adam!</h1>
 					{{ content }}
 				
@@ -39,7 +39,7 @@
 
 			<div class="col-lg-3">
 				<span class="glyphicon glyphicon-fire"></span>
-				<p>A burning desire to learn more.</p>
+				<p>A desire to learn more.</p>
 			</div>
 
 			<div class="col-lg-3">
