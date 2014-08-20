@@ -7,7 +7,7 @@
     <!--twitter Card and OpenGraph -->
     <meta property="twitter:card" content="summary" />
 	<meta property="twitter:creator:id" content="165160092" />
-	<meta property="og:title" content="{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt| strip_html }}{% else%}{{ site.description }}{% endif %}" />
 	<meta property="og:url" content="{% if page.url %}{{ site.url}}{{ page.url}}{% else %}{{ site.url }}{% endif %}" />
     <meta property="twitter:site" content="@abakerit" />
@@ -18,11 +18,27 @@
     <meta name="googlebot" content="index,follow" />
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    
+    <!-- Bootstrap core CSS -->
+    <link href=" {{"/assets/css/bootstrap.css" | prepend: site.baseurl }}" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-    <!--jQuery-->
-    <script type="text/javascript" src=" {{ "/scripts/jquery-1.11.1.min.js" | prepend: site.baseurl }}" defer></script>
+    <!-- Custom styles for this template -->
+    <link href=" {{"/assets/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
 
-    <script type="text/javascript" src=" {{ "/scripts/tcard.js" | prepend: site.baseurl }}" defer></script>
+    
+    <script src=" {{"/assets/js/hover.zoom.js" | prepend: site.baseurl }}" ></script>
+    <script src=" {{"/assets/js/hover.zoom.conf.js" | prepend: site.baseurl }}" ></script>
+
+   
+    <!-- <script type="text/javascript" src=" {{ "/scripts/jquery-1.11.1.min.js" | prepend: site.baseurl }}" defer></script>-->
+
+    <script type="text/javascript" src=" {{ "/scripts/tcard.js" | prepend: site.baseurl }}" defer></script> 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Scripts-->
 </head>

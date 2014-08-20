@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
     <body>
 
     {% include header.html %}
-    <!--Main page content-->
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      <br/>
+    
+	{{ content }}
+<br/>
 	<!--Pagination -->
 	{% if paginator.total_pages > 1 %}
 	<div class="pagination">
@@ -38,11 +36,8 @@
 	</div>
 	{% endif %}
 
-    </div>
-</div>
 
     {% include footer.html %}
-<!--Scripts test-->
     
     
     </body>
