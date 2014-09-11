@@ -25,6 +25,11 @@
                 overlayColor: '#e74c3c',
                 zoom: 0
             });
+
+            $('.violet').hoverZoom({
+                overlayColor: '#6f5499',
+                zoom: 0
+            });
             
             /* USAGE
             

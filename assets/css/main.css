@@ -48,7 +48,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    color: #6f5499;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -95,8 +95,13 @@ a:after {
 }
 
 .navbar-inverse {
-	background-color: #1abc9c;
-	border-color: #16a085;
+	background-color: #6f5499;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+    background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+    background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+    background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+    background-repeat: repeat-x;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -122,7 +127,8 @@ a:after {
 }
 
 .progress-bar-theme {
-  background-color: #1abc9c;
+    background-color: #6f5499;
+    border-color: #563d7c;
 }
 
 
@@ -238,7 +244,7 @@ bt {
 
 .glyphicon {
 	font-size: 40px;
-	color: #1abc9c;
+	color: #6f5499;
 }
 
 /* ================== ICON IMAGES EFFECT ================== */
@@ -320,4 +326,4 @@ bt {
 
 .centerBtn{ margin-left: auto; margin-right: auto;}
 
-
+.work-h1{margin-top: -50px;}
