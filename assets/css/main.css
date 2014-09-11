@@ -188,15 +188,15 @@ a:after {
 
 
 /* Blog Date*/
-bd {
-	font-size: 12px;
+.bd {
+	font-size: 10px;
 	text-transform: uppercase;
-	color: #d2d2d2;
+	color: #222;
 	font-weight: 700;
 }
 
 /* Blog Author*/
-ba {
+.ba {
 	font-size: 12px;
 	text-transform: uppercase;
 }
@@ -208,7 +208,7 @@ ba {
 }
 
 /* Blog Tags */
-bt {
+.bt {
 	font-size: 12px;
 }
 
@@ -246,7 +246,7 @@ bt {
 	font-size: 40px;
 	color: #6f5499;
 }
-
+.glyphicon-post{font-size: 16px;}
 /* ================== ICON IMAGES EFFECT ================== */
 .github-icon-svg,
 .twitter-icon-svg {
@@ -327,3 +327,4 @@ bt {
 .centerBtn{ margin-left: auto; margin-right: auto;}
 
 .work-h1{margin-top: -50px;}
+.post-title {margin-top: -20px;}
