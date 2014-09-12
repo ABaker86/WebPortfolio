@@ -25,7 +25,7 @@ As of the date of this posting, the following is the link to the jTags Website.
 <img src="{{site.url}}/WebPortfolio/postAssets/fullpage-screenshot-wcomments.png" class="img-responsive img-thumbnail centered" alt="Responsive design of jTags project Website">
 
 ####Second jTags Redesign
-<img src="{{site.url}}/WebPortfolio/postAssets/Second-jTags-Redesign.png" class="img-responsive img-thumbnail centered" alt="Second responsive redesign of jTags project Website">
+<img src="{{site.url}}/WebPortfolio/assets/img/jTags/Second-jTags-Redesign.png" class="img-responsive img-thumbnail centered" alt="Second responsive redesign of jTags project Website">
 
 ####Lessons Learned: 
 
