@@ -24,6 +24,9 @@ As of the date of this posting, the following is the link to the jTags Website.
 
 <img src="{{site.url}}/WebPortfolio/postAssets/fullpage-screenshot-wcomments.png" class="img-responsive img-thumbnail centered" alt="Responsive design of jTags project Website">
 
+####Second jTags Redesign
+<img src="{{site.url}}/WebPortfolio/postAssets/Second-jTags-Redesign.png" class="img-responsive img-thumbnail centered" alt="Second responsive redesign of jTags project Website">
+
 ####Lessons Learned: 
 
 I did this exercise for two reasons. The first reason is that I wanted to gain additional experience in designing and developing Websites. As a developer I want to keep learning and improving on my skills. The second reason is that I thought the redesign might actually be used. Having independant project on GitHub may be great, but having contributed to an open-source proejct feels much better. 
