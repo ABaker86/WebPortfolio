@@ -15,4 +15,4 @@ Creating all of my tools for the Chrome Web Browser may seem to be a bit of an o
 
 My latest tool is called "SearchInFile". The application allows the user to search for specificed text within a file. The user is allowed to select one or more files to search through. After the file(s) have been searched, a visual indicator will be displayed for each file indicating whether the selected text has been found. 
 
-![File Search](https://github.com/ABaker86/WebPortfolio/blob/gh-pages/postAssets/FileSearchSmallPoster.png)
+![File Search](http://abaker86.github.io/WebPortfolio/postAssets/FileSearchSmallPoster.png)
