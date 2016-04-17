@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<h4>Address</h4>
+					<h4>Location</h4>
 					<p>
 						
 						{{ site.phone }}, <br/>
@@ -13,7 +13,7 @@
 				</div><!-- /col-lg-4 -->
 				
 				<div class="col-lg-4">
-					<h4>My Links</h4>
+					<h4>Follow</h4>
 					<p>
 						<ul>
         <!--RSS Logo-->
@@ -101,7 +101,7 @@
 				</div><!-- /col-lg-4 -->
 				
 				<div class="col-lg-4">
-					<h4>About Adam</h4>
+					<h4>About</h4>
 					{{ site.description }}
 				</div><!-- /col-lg-4 -->
 			
