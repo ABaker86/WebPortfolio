@@ -4,22 +4,12 @@ layout: default
 <div class="post">
 
   <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
 
-<!-- +++++ Post +++++ -->
-	<div id="white">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-
-					<p><bd>{{ page.date }}</bd></p>
-					<h4>{{ page.title }}</h4>
-					{{ content }}
-					<hr>
-					<p><a href="{{ site.baseurl }}/"># Back</a></p>
-				</div>
-
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /white -->
+  <article class="post-content">
+  {{ content }}
+  </article>
 
 </div>

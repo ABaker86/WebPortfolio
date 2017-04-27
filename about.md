@@ -1,12 +1,11 @@
 ---
-layout: about
+layout: page
 title: About
 permalink: /about/
 ---
 
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
+You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-After working in the food and beverage industry for several years, I made a conscious decision to alter my future with the decision to pursue my passion of becoming a software developer. 
-
-Although I achieved success in the food and beverage industry, my real passion has always resided in the field of technology. 
-
+You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
