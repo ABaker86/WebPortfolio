@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Becoming more available for connections"
+date:   2014-07-25 9:31:56
+categories: Personal
+keywords: "IT community, social, connections"
+---
+
+Although I have never had a hard time getting along with others, I have never really been one to seek out new connections. 
+
+I chalk it up to initial shyness and the lack of desire to be social in general. However, my career goal is to work in the IT industry as a developer and regardless of how "non-social" these types of positions are advertised being social and having connections are important. So it is time to make a change!
+
+I decided to take a few steps to help me become more social in the IT community while hopefully building connections. Released in 2013, [Scott Hanselman](http://www.hanselman.com/blog/) and [Rob Conery](http://wekeroad.com/) published a video series on Pluralsight about a their take on how IT professionals can and should get more involved in the IT field. The video series is called [Get Involved!](http://beta.pluralsight.com/courses/get-involved).  Some of the things they cover include Blogging, connecting with Twitter, using Github, answering and asking questions on StackOverflow, and User Groups. After viewing the 1 hour presentation, I decided to take a few steps in the right direction by reworking my Github profile website with this Jekyll blog, reworking my old twitter account I never used, and began looking into StackOverflow and local User Groups.

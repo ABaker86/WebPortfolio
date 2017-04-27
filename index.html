@@ -1,20 +1,49 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="home">
+<!-- +++++ Posts Lists +++++ -->
+<!-- +++++ First Post +++++ -->
+{% for post in paginator.posts %}
+	<div id="white">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><bd><span class="glyphicon glyphicon-calendar glyphicon-post"></span>  {{ post.date | date: "%b %-d, %Y" }}</bd></p>
+					<h4 class="post-title">{{ post.title }}</h4>
+					{{ post.excerpt }}
+					
+					<p><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading...</a></p>
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /grey -->
+{% endfor %}
+	
+<!--Pagination -->
+	{% if paginator.total_pages > 1 %}
+		<div class="col-lg-6 col-lg-offset-3 centered">
+		  {% if paginator.previous_page %}
+		    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; New</a>
+		  {% else %}
+		    <span>&laquo; New</span>
+		  {% endif %}
 
-  <h1>Posts</h1>
+		  {% for page in (1..paginator.total_pages) %}
+		    {% if page == paginator.page %}
+		      <em>{{ page }}</em>
+		    {% elsif page == 1 %}
+		      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+		    {% else %}
+		      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page  }}">{{ page }}</a>
+		    {% endif %}
+		  {% endfor %}
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+		  {% if paginator.next_page %}
+		    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+		  {% else %}
+		    <span>Older &raquo;</span>
+		  {% endif %}
+		</div>
+	{% endif %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
