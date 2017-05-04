@@ -1,5 +1,5 @@
 # Site settings
-title: Adam Baker | Software Developer
+title: "Adam Baker | Software Developer"
 email: "adambaker@live.com"
 phone: "260-409-7729"
 description: "Adam is a software developer living in Fort Wayne, IN, US. The author of the Google Chrome App 'IT Signature Generator' and 'File Search', and when he is not working on code, he is working on classic cars and trucks."
@@ -28,7 +28,7 @@ author: "Adam Baker"
 # Update Info from GitHelp Documentation
  lsi: false
  safe: true
- source: [your repo's top level directory]
+ source: "abaker86/WebPortfolio"
  incremental: false
  highlighter: rouge
  gist:
