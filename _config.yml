@@ -23,3 +23,14 @@ permalink: pretty
 # Meta Settings
 keywords: "web developer, web app development, software application development, front-end dev, back-end dev"
 author: "Adam Baker"
+
+# Update Info from GitHelp Documentation
+ lsi: false
+ safe: true
+ source: [your repo's top level directory]
+ incremental: false
+ highlighter: rouge
+ gist:
+   noscript: false
+ kramdown:
+   math_engine: mathjax
