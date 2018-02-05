@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Programatically Configuration NLog"
+title:  "Programmatically Configuration NLog"
 date:   2018-02-05 07:01:56
 categories: Personal
 keywords: "C#, NLog, Logging"
@@ -21,7 +21,7 @@ When selecting a solution, the following criteria was needed:
 
 I reviewed each option based on the criteria and came to the conclusion to use the NLog framework for my application logging needs at this time.
 
-Below is and exampl of how the NLog framework can be configured programatically.
+Below is and exampl of how the NLog framework can be configured Programmatically.
 
 {% highlight ruby linenos %}
 	 protected void sortDropDownList(DropDownList ddl, string orderby, string defaultSelectionText) 
