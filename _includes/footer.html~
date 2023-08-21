@@ -84,7 +84,7 @@
 
         <!--LinkedIn logo-->
 {% if site.linkedIn %}<li>
-          <a href="www.linkedin.com/in/adambaker2/">
+          <a href="https://www.linkedin.com/in/adambaker2/">
         <!--add linkedIn icon here-->
        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
 <g>
