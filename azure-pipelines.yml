@@ -16,7 +16,7 @@ steps:
 
 - script: |
    git fetch --all
-   git switch gh-pages
+   git switch origin/gh-pages
    git pull origin/gh-pages
   displayName: 'check out gh-pages'
   workingDirectory: $(System.DefaultWorkingDirectory)
