@@ -20,6 +20,10 @@ steps:
   displayName: 'check out gh-pages'
   workingDirectory: $(System.DefaultWorkingDirectory)
 
+- script: |
+   git pull
+  displayName: 'git pull'
+  workingDirectory: $(System.DefaultWorkingDirectory)
 - task: DownloadBuildArtifacts@1
   inputs:
     buildType: 'specific'
