@@ -20,13 +20,13 @@ steps:
    git switch $(basename $(Build.SourceBranch))
   displayName: 'Fetching from $(basename $(Build.SourceBranch))'
 
-- task: DeleteFiles@1
-  inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: |
-      **
-      !azure-pipelines.yml
-      !config.yml
+#- task: DeleteFiles@1
+#  inputs:
+#    SourceFolder: '$(System.DefaultWorkingDirectory)'
+#    Contents: |
+#      **
+#      !azure-pipelines.yml
+#      !config.yml
 
 
 - task: DownloadBuildArtifacts@1
