@@ -42,4 +42,4 @@ steps:
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
   displayName: 'commit to branch'
-  workingDirectory: $(System.StagingDirectory)
+  workingDirectory: $(Build.StagingDirectory)
