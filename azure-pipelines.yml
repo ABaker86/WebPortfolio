@@ -30,7 +30,7 @@ steps:
     downloadType: 'single'
     artifactName: 'site'
     downloadPath: $(System.DefaultWorkingDirectory)
-    #cleanDestinationFolder: true
+    
 
 - task: CopyFiles@2 
   displayName: Moving $(System.DefaultWorkingDirectory)/site to $(System.DefaultWorkingDirectory)
@@ -44,6 +44,7 @@ steps:
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
     Contents: 'site'
+
 
 - script: |
    git add --all
