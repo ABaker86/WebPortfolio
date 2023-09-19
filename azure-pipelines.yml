@@ -14,12 +14,12 @@ steps:
   workingDirectory: $(System.DefaultWorkingDirectory)
   displayName: 'Set config user name and email'
 
-#- script: |
-#   git fetch --all
-#   git switch gh-pages
-#   git pull gh-pages
-#  displayName: 'check out gh-pages'
-#  workingDirectory: $(System.DefaultWorkingDirectory)
+- script: |
+   git fetch --all
+   git switch gh-pages
+   git pull origin/gh-pages
+  displayName: 'check out gh-pages'
+  workingDirectory: $(System.DefaultWorkingDirectory)
 
 #- script: |
 #   git pull gh-pages
@@ -34,12 +34,12 @@ steps:
     buildVersionToDownload: 'latest'
     downloadType: 'single'
     artifactName: 'site'
-    downloadPath: '$(Build.StagingDirectory)'
+    downloadPath: '$(Build.DefaultWorkingDirectory)'
     cleanDestinationFolder: true
 
 - script: |
    git add --all
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
-  displayName: 'commit to branch'
-  workingDirectory: $(Build.StagingDirectory)
+  displayName: 'commit to branch gh-page at location - "$(Build.DefaultWorkingDirectory)"'
+  workingDirectory: $(Build.DefaultWorkingDirectory)
