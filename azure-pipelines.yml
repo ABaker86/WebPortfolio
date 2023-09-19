@@ -5,6 +5,17 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+
+
+- script: |
+    git config --global user.email "adambaker@live.com"
+    git config --global user.name "Adam Baker" 
+  displayName: 'set git user info'
+
+- script: 'git checkout origin/gh-pages'
+  displayName: 'checkout gh-pages'
+
+
 - task: DownloadBuildArtifacts@1
   inputs:
     buildType: 'specific'
@@ -17,11 +28,7 @@ steps:
     downloadPath: '$(Build.StagingDirectory)'
     cleanDestinationFolder: true
 
-- script: |
-    git config --global user.email "adambaker@live.com"
-    git config --global user.name "Adam Baker" 
-  displayName: 'set git user info'
-  
+
 - script: 'git add .'
   displayName: 'git add all files'
 
