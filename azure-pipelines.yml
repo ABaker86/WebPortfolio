@@ -49,5 +49,5 @@ steps:
    git add --all
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
-  displayName: 'commit to branch gh-page at location - "$(System.DefaultWorkingDirectory)"'
+  displayName: 'commit to branch gh-page at location - $(System.DefaultWorkingDirectory)'
   workingDirectory: $(System.DefaultWorkingDirectory)
