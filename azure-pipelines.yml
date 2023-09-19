@@ -19,17 +19,7 @@ steps:
    git fetch --all
    git switch $(basename $(Build.SourceBranch))
   displayName: 'Fetching from "$(basename $(Build.SourceBranch))"'
-#- script: |
-#   git fetch --all
-#   git switch origin/gh-pages
-#   git pull origin/gh-pages
-#  displayName: 'check out gh-pages'
-#  workingDirectory: $(System.DefaultWorkingDirectory)
 
-#- script: |
-#   git pull gh-pages
-#  displayName: 'git pull'
-#  workingDirectory: $(System.DefaultWorkingDirectory)
 - task: DownloadBuildArtifacts@1
   inputs:
     buildType: 'specific'
@@ -39,12 +29,12 @@ steps:
     buildVersionToDownload: 'latest'
     downloadType: 'single'
     artifactName: 'site'
-    downloadPath: '$(Build.DefaultWorkingDirectory)'
+    downloadPath: '$(System.DefaultWorkingDirectory)'
     cleanDestinationFolder: true
 
 - script: |
    git add --all
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
-  displayName: 'commit to branch gh-page at location - "$(Build.DefaultWorkingDirectory)"'
-  workingDirectory: $(Build.DefaultWorkingDirectory)
+  displayName: 'commit to branch gh-page at location - "$(System.DefaultWorkingDirectory)"'
+  workingDirectory: $(System.DefaultWorkingDirectory)
