@@ -29,8 +29,8 @@ jobs:
     displayName: 'Copy Files from: $(Build.SourcesDirectory)'
     inputs:
       SourceFolder: '$(Build.SourcesDirectory)/DevPortfolio'
-      Contents: '*'
       TargetFolder: '$(Build.StagingDirectory)'
+  
   
   - task: CopyFiles@2
     inputs:
