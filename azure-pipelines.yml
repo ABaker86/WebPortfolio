@@ -18,7 +18,7 @@ steps:
 - script: |
    git fetch --all
    git switch $(basename $(Build.SourceBranch))
-  displayName: 'Fetching from "$(basename $(Build.SourceBranch))"'
+  displayName: 'Fetching from $(basename $(Build.SourceBranch))'
 
 - task: DownloadBuildArtifacts@1
   inputs:
@@ -30,7 +30,7 @@ steps:
     downloadType: 'single'
     artifactName: 'site'
     downloadPath: $(System.DefaultWorkingDirectory)
-    cleanDestinationFolder: true
+    #cleanDestinationFolder: true
 
 - task: CopyFiles@2 
   displayName: Moving $(System.DefaultWorkingDirectory)/site to $(System.DefaultWorkingDirectory)
@@ -39,6 +39,11 @@ steps:
     Contents: '**'
     TargetFolder: '$(System.DefaultWorkingDirectory)'
     OverWrite: true
+  
+- task: DeleteFiles@1
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: 'site'
 
 - script: |
    git add --all
