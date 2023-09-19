@@ -32,6 +32,14 @@ steps:
     downloadPath: $(System.DefaultWorkingDirectory)
     cleanDestinationFolder: true
 
+- task: CopyFiles@2 
+  displayName: Moving $(System.DefaultWorkingDirectory)/site to $(System.DefaultWorkingDirectory)
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/site'
+    Contents: '**'
+    TargetFolder: '$(System.DefaultWorkingDirectory)'
+    OverWrite: true
+
 - script: |
    git add --all
    git commit -m "deployment $(Build.BuildNumber)"
