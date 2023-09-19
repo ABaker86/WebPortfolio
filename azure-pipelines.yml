@@ -15,7 +15,6 @@ steps:
   workingDirectory: $(System.DefaultWorkingDirectory)
   displayName: 'Set config user name and email'
 
-
 - script: |
    git fetch --all
    git switch $(basename $(Build.SourceBranch))
