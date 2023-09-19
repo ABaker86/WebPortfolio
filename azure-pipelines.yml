@@ -21,7 +21,7 @@ steps:
   workingDirectory: $(System.DefaultWorkingDirectory)
 
 - script: |
-   git pull
+   git pull gh-pages
   displayName: 'git pull'
   workingDirectory: $(System.DefaultWorkingDirectory)
 - task: DownloadBuildArtifacts@1
