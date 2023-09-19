@@ -24,8 +24,8 @@ email: adambaker@live.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a software engineer specializing in building line-of-business applications using .NET. 
   Currently, I'm focused on building an accessible CMS for fun.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/WebPortfolioio" # the subpath of your site, e.g. /blog /WebPortfolio
+url: "http://abaker86.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AdamBak42738280
 github_username: ABaker86
 linkedIn: Adam Baker
