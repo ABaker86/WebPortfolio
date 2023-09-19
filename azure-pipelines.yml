@@ -8,19 +8,18 @@ steps:
 - checkout: self
   persistCredentials: true
 
-
 - script: |
    git config --global user.email "adambaker@live.com"
    git config --global user.name "Adam Baker"
   workingDirectory: $(System.DefaultWorkingDirectory)
   displayName: 'Set config user name and email'
 
-- script: |
-   git fetch --all
-   git switch gh-pages
-   git pull gh-pages
-  displayName: 'check out gh-pages'
-  workingDirectory: $(System.DefaultWorkingDirectory)
+#- script: |
+#   git fetch --all
+#   git switch gh-pages
+#   git pull gh-pages
+#  displayName: 'check out gh-pages'
+#  workingDirectory: $(System.DefaultWorkingDirectory)
 
 #- script: |
 #   git pull gh-pages
