@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- gh-pages
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'specific'
+    project: '44ddd2e1-c1d5-4817-9d63-fd204e03eaa9'
+    pipeline: '3'
+    specificBuildWithTriggering: true
+    buildVersionToDownload: 'latest'
+    downloadType: 'single'
+    artifactName: 'site'
+    downloadPath: '$(Build.ArtifactsDirectory)'
+    cleanDestinationFolder: true
+
