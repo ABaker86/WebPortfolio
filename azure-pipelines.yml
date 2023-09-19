@@ -17,10 +17,11 @@ steps:
     downloadPath: '$(Build.StagingDirectory)'
     cleanDestinationFolder: true
 
-- script: |
-    git add. 
-    git commit -m "azure deploy"
-  displayName: 'git commit'
-- script: |
-    git push
-  displayName: 'git push'
+- script: 'git add .'
+  displayName: 'git add all files'
+
+- script : 'git commit -m "azure deploy"'
+  displayName: 'git commit with message'
+
+- script: 'git push'
+  displayName: 'git push to branch'
