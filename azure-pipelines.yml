@@ -9,11 +9,11 @@ steps:
   clean: true
   persistCredentials: true
 
-#- script: |
-#   git config --global user.email "adambaker@live.com"
-#   git config --global user.name "Adam Baker"
-#  workingDirectory: $(System.DefaultWorkingDirectory)
-#  displayName: 'Set config user name and email'
+- script: |
+   git config --global user.email "adambaker@live.com"
+   git config --global user.name "Adam Baker"
+  workingDirectory: $(System.DefaultWorkingDirectory)
+  displayName: 'Set config user name and email'
 
 - script: |
    git fetch --all
