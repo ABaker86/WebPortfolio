@@ -1,0 +1,29 @@
+<p>Two common methods used in elevating the web page ranking via improved social interaction and representation include OpenGraph and Twitter Cards.</p>
+
+<p>Each method has the ability to produce intendant results depending on its application. However, Twitter Cards have a convenient OpenGraph fall back behavior. Both  Twitter Cards and OpenGraph are implemented into Websites via <code class="language-plaintext highlighter-rouge">meta</code> tags. One of the main differences between the two are that OpenGraph is intended to be consumed automatically whereas Twitter Cards are required to be validated and applied for within the Twitter developers dashboard. More specific information about <a href="http://ogp.me/">OpenGraph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> can be found at their respective websites. However, the most common meta elements include title, description, card, image, type, and url.</p>
+
+<p>When deciding to add OpenGraph and Twitter Card meta tags to Jekyll a few things caught my attention. The first, was that adding these meta tags to my Jekyll index page manually would make every page of my website contain exactly the same information. So what if someone else decided to author a post on my site, and what about adding unique meta descriptions to each page? The second was can Jekyll’s Liquid templating help me out with any of these issues.</p>
+
+<p>In November of 2013, Matt Southern wrote a post for <em>SearchEngine Journal</em> called <a href="http://www.searchenginejournal.com/matt-cutts-answers-every-page-needs-unique-meta-description/78133/">“Matt Cutts Answers If Every Page Needs To Have A Unique Meta Description”</a>. Matt leads his discussion by stating that Web pages should either have Only unique description tags or none at all.</p>
+
+<blockquote>
+  <p>Definitely don’t have duplicate meta tag descriptions.</p>
+</blockquote>
+
+<p>Matt Cutts</p>
+
+<p>Interestingly enough, Matt recommends that if a page is not the Home page of a site or have high ROI you should not bother with adding meta tag descriptions.</p>
+
+<p>With this in mind, I began to ponder the value of my little site. I came to the conclusion that if I was going to make the effort to write something then it must also have a pretty good ROI. It also seemed like a really good idea to get a sound architecture in place before my blog reaches a size that is difficult to make alterations to.  Jekyll’s Liquid templating allowed me to add a new element to the config.yaml and each post’s YAML frontmatter for keeping track of things like keywords. However, I ended up changing the way I wrote my posts so as to ensure that each post’s excerpt is used as the pages description and each post’s title becomes the title of the page.</p>
+
+<p>Below is an example of how I used Jekyll’s liquid templating to ensure that each page generates with unique meta data.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="o">&lt;</span><span class="n">meta</span> <span class="n">property</span><span class="o">=</span><span class="s2">"og:title"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"</span> <span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">property</span><span class="o">=</span><span class="s2">"og:description"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}"</span> <span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">property</span><span class="o">=</span><span class="s2">"og:url"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}"</span> <span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>This setup will allow me to add unique meta tag information to each page of my blog whenever I write a post. Pretty cool huh? I thought so too.</p>
