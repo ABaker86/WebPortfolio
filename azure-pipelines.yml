@@ -19,6 +19,7 @@ steps:
 - script: |
    git fetch --all
    git switch $(basename $(Build.SourceBranch))
+  displayName: 'Fetching from "$(basename $(Build.SourceBranch))"'
 #- script: |
 #   git fetch --all
 #   git switch origin/gh-pages
