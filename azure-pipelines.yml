@@ -26,6 +26,7 @@ steps:
     Contents: |
       **
       !azure-pipelines.yml
+      !config.yml
 
 
 - task: DownloadBuildArtifacts@1
