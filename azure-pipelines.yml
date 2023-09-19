@@ -8,18 +8,16 @@ steps:
 - checkout: self
   persistCredentials: true
 
-#- script: |
-#    git config --global user.email "adambaker@live.com"
-#    git config --global user.name "Adam Baker" 
-#  displayName: 'set git user info'
 
 - script: |
-   git config --global user.email adambaker@live.com & git config --global user.name "Adam Baker"
+   git config --global user.email "adambaker@live.com"
+   git config --global user.name "Adam Baker"
   workingDirectory: $(System.DefaultWorkingDirectory)
+  displayName: 'Set config user name and email'
 
 - script: |
    git checkout -b gh-pages
-  displayName: check out gh-pages
+  displayName: 'check out gh-pages'
   workingDirectory: $(System.DefaultWorkingDirectory)
 
 - task: DownloadBuildArtifacts@1
@@ -37,7 +35,7 @@ steps:
 - script: |
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
-  displayName: commit to branch
+  displayName: 'commit to branch'
   workingDirectory: $(System.DefaultWorkingDirectory)
 #- script: 'git add .'
 #  displayName: 'git add all files'
