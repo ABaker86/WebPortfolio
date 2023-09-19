@@ -46,12 +46,6 @@ steps:
     Contents: 'site'
 
 - script: |
-   git config --global user.email "adambaker@live.com"
-   git config --global user.name "Adam Baker"
-  workingDirectory: $(System.DefaultWorkingDirectory)
-  displayName: 'Set config user name and email again'
-
-- script: |
    git add --all
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
