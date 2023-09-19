@@ -26,53 +26,20 @@ jobs:
     displayName: 'jekyll build'
   
   - task: CopyFiles@2
-    displayName: 'Copy Files to: $(Build.SourcesDirectory)'
+    displayName: 'Copy Files from: $(Build.SourcesDirectory)'
     inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/DevPortfolio'
+      Contents: '*'
       TargetFolder: '$(Build.StagingDirectory)'
+  
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)'
+      Contents: '*.yml'
+      TargetFolder: '$(Build.StagingDirectory)'
+    displayName: Copy yml files
   
   - task: PublishBuildArtifacts@1
     inputs:
-      pathtoPublish: '$(Build.StagingDirectory)/_site'
+      pathtoPublish: '$(Build.StagingDirectory)'
       artifactName: site
-
-#build complete
-##Push to gh-pages
-#
-#- job: Deploy
-#  pool:
-#    vmImage: 'ubuntu-latest'
-#  workspace:
-#    clean: all
-#  steps:
-#  - checkout: none #skip checking out the default repository resource
-#  #- task: DownloadBuildArtifacts@0
-#  #  displayName: 'Download Build Artifacts'
-#  #  inputs:
-#  #    artifactName: site
-#  #    downloadPath: $(Pipeline.Workspace)
-#  - script: |
-#      git config user.name "ABaker86"
-#      git config user.email "adambaker@live.com"
-#
-#      git clone https://github.com/ABaker86/WebPortfolio.git
-#      git checkout gh-pages
-#    workingDirectory: $(Build.SourcesDirectory)
-#    displayName: 'checkout github branch'
-#  - task: DownloadBuildArtifacts@1
-#    inputs:
-#      buildType: 'specific'
-#      project: '44ddd2e1-c1d5-4817-9d63-fd204e03eaa9'
-#      pipeline: '3'
-#      buildVersionToDownload: 'latest'
-#      downloadType: 'specific'
-#      downloadPath: '$(Build.StagingDirectory)'
-#      cleanDestinationFolder: true
-#  - script: |
-#      git add .
-#      git commit -a m "azure build"
-#      git push
-#    workingDirectory: $(Build.SourcesDirectory)
-#    displayName: 'checkout github branch'
-#
-#  dependsOn: Build
-#  condition: succeeded()
