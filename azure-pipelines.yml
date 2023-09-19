@@ -33,15 +33,8 @@ steps:
     cleanDestinationFolder: true
 
 - script: |
+   git add --all
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
   displayName: 'commit to branch'
   workingDirectory: $(System.DefaultWorkingDirectory)
-#- script: 'git add .'
-#  displayName: 'git add all files'
-#
-#- script : 'git commit -m "azure deploy"'
-#  displayName: 'git commit with message'
-#
-#- script: 'git push'
-#  displayName: 'git push to branch'
