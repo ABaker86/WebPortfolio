@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   {% include head.html %}
+    <body>
+    {% include header.html %}
+	<!-- +++++ Contact Section +++++ -->
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-6 col-lg-offset-3 centered">
+				<h3>CONTACT ME</h3>
+				<hr>
+				<p>I am always on the lookout for the next great opprotunity to help out and make a difference.</p>
+			</div>
+		</div>
+		<div class="row mt">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-5"><a href="mailto:adambaker@live.com"><button id="contactSubmit" type="button" class="btn btn-success" >Send Email</button></a></div>
+				</div>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	<!-- +++++ Footer Section +++++ -->
+	{% include footer.html %}
+	<script src="{{"/assets/js/mail.min.js" | prepend: site.baseurl }}"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+	
+	<!-- +++++ Projects Section +++++ -->
+	
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<h3 class="text-center">{{ page.title }}</h3>
+				<hr>
+				{{ content }}
+				<br/><hr>
+				<a href="{{ "/work/"|prepend: site.baseurl }}"># Back<a/>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+	</div><!-- /container -->
+
+	<!-- +++++ Footer Section +++++ -->
+	{% include footer.html %}
+  </body>
+</html>
