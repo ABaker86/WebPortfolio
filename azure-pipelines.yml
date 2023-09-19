@@ -34,7 +34,7 @@ steps:
     buildVersionToDownload: 'latest'
     downloadType: 'single'
     artifactName: 'site'
-    downloadPath: '$(Build.DefaultWorkingDirectory)'
+    downloadPath: '$(Build.StagingDirectory)'
     cleanDestinationFolder: true
 
 - script: |
@@ -42,4 +42,4 @@ steps:
    git commit -m "deployment $(Build.BuildNumber)"
    git push --set-upstream origin gh-pages 
   displayName: 'commit to branch'
-  workingDirectory: $(System.DefaultWorkingDirectory)
+  workingDirectory: $(System.StagingDirectory)
