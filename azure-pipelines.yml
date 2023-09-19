@@ -6,6 +6,7 @@ pool:
 
 steps:
 - checkout: self
+  clean: true
   persistCredentials: true
 
 - script: |
@@ -14,12 +15,16 @@ steps:
   workingDirectory: $(System.DefaultWorkingDirectory)
   displayName: 'Set config user name and email'
 
+
 - script: |
    git fetch --all
-   git switch origin/gh-pages
-   git pull origin/gh-pages
-  displayName: 'check out gh-pages'
-  workingDirectory: $(System.DefaultWorkingDirectory)
+   git switch $(basename $(Build.SourceBranch))
+#- script: |
+#   git fetch --all
+#   git switch origin/gh-pages
+#   git pull origin/gh-pages
+#  displayName: 'check out gh-pages'
+#  workingDirectory: $(System.DefaultWorkingDirectory)
 
 #- script: |
 #   git pull gh-pages
