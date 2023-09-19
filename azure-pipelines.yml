@@ -5,16 +5,22 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self
+  persistCredentials: true
 
+#- script: |
+#    git config --global user.email "adambaker@live.com"
+#    git config --global user.name "Adam Baker" 
+#  displayName: 'set git user info'
 
 - script: |
-    git config --global user.email "adambaker@live.com"
-    git config --global user.name "Adam Baker" 
-  displayName: 'set git user info'
+   git config --global user.email adambaker@live.com & git config --global user.name "Adam Baker"
+  workingDirectory: $(System.DefaultWorkingDirectory)
 
-- script: 'git checkout origin/gh-pages'
-  displayName: 'checkout gh-pages'
-
+- script: |
+   git checkout -b gh-pages
+  displayName: check out gh-pages
+  workingDirectory: $(System.DefaultWorkingDirectory)
 
 - task: DownloadBuildArtifacts@1
   inputs:
@@ -25,15 +31,19 @@ steps:
     buildVersionToDownload: 'latest'
     downloadType: 'single'
     artifactName: 'site'
-    downloadPath: '$(Build.StagingDirectory)'
+    downloadPath: '$(Build.DefaultWorkingDirectory)'
     cleanDestinationFolder: true
 
-
-- script: 'git add .'
-  displayName: 'git add all files'
-
-- script : 'git commit -m "azure deploy"'
-  displayName: 'git commit with message'
-
-- script: 'git push'
-  displayName: 'git push to branch'
+- script: |
+   git commit -m "deployment $(Build.BuildNumber)"
+   git push --set-upstream origin gh-pages 
+  displayName: commit to branch
+  workingDirectory: $(System.DefaultWorkingDirectory)
+#- script: 'git add .'
+#  displayName: 'git add all files'
+#
+#- script : 'git commit -m "azure deploy"'
+#  displayName: 'git commit with message'
+#
+#- script: 'git push'
+#  displayName: 'git push to branch'
