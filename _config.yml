@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I'm a software engineer specializing in building line-of-business applications using .NET. 
   Currently, I'm looking into BPMN workflow engines and CMSs.
 baseurl: "/WebPortfolio" # the subpath of your site, e.g. /blog
-url: "ttp://abaker86.github.io" # the base hostname & protocol for your site, e.g. http://example.com http://abaker86.github.io/WebPortfolio/
+url: "http://abaker86.github.io" # the base hostname & protocol for your site, e.g. http://example.com http://abaker86.github.io/WebPortfolio/
 twitter_username: AdamBak42738280
 github_username: ABaker86
 linkedin_username: adambaker2
