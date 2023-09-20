@@ -1,9 +1,18 @@
 ---
-layout: about
+layout: page
 title: About
 permalink: /about/
 ---
 
-After working in the food and beverage industry for several years, I made a conscious decision to alter my future with the decision to pursue my passion of becoming a software developer.
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-Although I achieved success in the food and beverage industry, my real passion has always resided in the field of technology.
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
+
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+
+[jekyll-organization]: https://github.com/jekyll
