@@ -10,12 +10,13 @@ layout: page
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <p>
-                    <bd><span class="glyphicon glyphicon-calendar glyphicon-post"></span> {{ post.date | date: "%b %-d, %Y" }}</bd>
+                    <bd><span class="glyphicon glyphicon-calendar glyphicon-post"></span> {{ post.date | date: "%b %-d,
+                        %Y" }}</bd>
                 </p>
                 <h4 class="post-title">{{ post.title }}</h4>
                 {{ post.excerpt }}
 
-                <p><a href="{{ post.url | prepend: site.baseurl  }}">Continue Reading...</a></p>
+                <p><a href="{{ post.url | prepend: {{site.baseurl | strip}}  }}">Continue Reading...</a></p>
             </div>
         </div><!-- /row -->
     </div> <!-- /container -->
@@ -26,7 +27,7 @@ layout: page
 {% if paginator.total_pages > 1 %}
 <div class="col-lg-6 col-lg-offset-3 centered">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl  | replace: '//', '/' }}">&laquo; New</a>
+    <a href="{{ paginator.previous_page_path | prepend: {{site.baseurl | strip}}  | replace: '//', '/' }}">&laquo; New</a>
     {% else %}
     <span>&laquo; New</span>
     {% endif %}
@@ -35,7 +36,7 @@ layout: page
     {% if page == paginator.page %}
     <em>{{ page }}</em>
     {% elsif page == 1 %}
-    <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    <a href="{{ '/index.html' | prepend: {{site.baseurl | strip}}  | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
     <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page  }}">{{ page
         }}</a>
@@ -43,7 +44,7 @@ layout: page
     {% endfor %}
 
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: {{site.baseurl | strip}} | replace: '//', '/' }}">Older &raquo;</a>
     {% else %}
     <span>Older &raquo;</span>
     {% endif %}
