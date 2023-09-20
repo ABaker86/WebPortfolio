@@ -27,9 +27,11 @@ baseurl: "/WebPortfolio" # the subpath of your site, e.g. /blog
 url: "ttp://abaker86.github.io" # the base hostname & protocol for your site, e.g. http://example.com http://abaker86.github.io/WebPortfolio/
 twitter_username: AdamBak42738280
 github_username: ABaker86
-linkedin_username: Adam Baker
+linkedin_username: adambaker2
 
 show_excerpts: true
+
+paginate: 3
 
 # Build settings
 theme: minima
