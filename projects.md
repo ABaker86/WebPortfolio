@@ -10,6 +10,45 @@ permalink: /projects/
     <div class="w3-col s6 w3-center " >
         <div class="w3-card-4 w3-border w3-round">
             <header class="w3-container ">
+                <b>DotNetPluginWebAPI</b>
+            </header>
+            <div class="w3-container w3-left-align" style="min-height:150px;">
+                <p>A plugin-based Web API written in .NET to reduce reimplementing preexisting cross-cutting conerns API codebases so developers can focus only on updating/implementing business logic.</p>
+            </div>
+            <footer class="w3-container " style="padding:5px;">
+                <a href="https://github.com/ABaker86/DotNetPluginWebAPI" class="w3-button w3-white w3-left w3-border w3-round" target="blank">View</a>
+                <p>
+                    <span class="w3-tag w3-right w3-light-gray w3-round ">.NET6</span>
+                    <span class="w3-tag w3-right w3-light-gray w3-round ">Scrutor</span>
+                    <span class="w3-tag w3-right w3-light-gray w3-round ">Swagger</span>
+                    <span class="w3-tag w3-right w3-light-gray w3-round ">C#</span>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div class="w3-col s6 w3-center " >
+       <!-- <div class="w3-card-4 w3-border w3-round" >
+            <header class="w3-container ">
+               <b>GreenHorn.Essentials</b>
+            </header>
+            <div class="w3-container w3-left-align" style="min-height:150px;">
+                <p>A library with utility classes, methods and common functionality to be used across multiple projects and project types.</p>
+            </div>
+            <footer class="w3-container " style="padding:5px;">
+                <a href="https://github.com/GreenHornSoftware/GreenHorn.Essentials" class="w3-button w3-white w3-left w3-border w3-round" target="blank">View</a>
+                <p><span class="w3-tag w3-right w3-light-gray w3-round ">C#</span></p>
+            </footer>
+        </div>-->
+    </div>
+</div>
+<br>
+
+<hr width="100%" style="border: 1px dashed #C0C0C0" >
+
+<div class="w3-row-padding">
+    <div class="w3-col s6 w3-center " >
+        <div class="w3-card-4 w3-border w3-round">
+            <header class="w3-container ">
                 <b>GreenHorn.NameParser</b>
             </header>
             <div class="w3-container w3-left-align" style="min-height:150px;">

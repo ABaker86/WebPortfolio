@@ -56,7 +56,7 @@ Technical Experience
 - AzureDevOps, Microsoft TFS, Git, SoapUI, Postman
 -  MSTest, NUnit
 
-Basic knowledge of: **C++**, **Python**, **Powershell**
+Basic knowledge of: **Angular**, **Vue.Js**, **C++**, **Python**, **Powershell**
 
 <hr width="100%" style="border: 1px dashed #C0C0C0" >
 
